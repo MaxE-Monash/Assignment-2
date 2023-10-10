@@ -1,0 +1,61 @@
+
+
+.first_banner {
+    background-color: rgba(50, 88, 168, 0.5);
+    border-radius: 5px;
+    width: 450px;
+}
+
+.first_under_banner {
+    background-color: rgba(50, 88, 168, 0.4);
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.first_background {
+    background-color: rgba(50, 88, 168, 0.05);
+    border-radius: 5px;
+
+}
+
+.second_banner {
+    background-color: rgba(28, 99, 28, 0.5);
+    border-radius: 5px;
+    width: 450px;
+}
+
+.second_background {
+    background-color: rgba(28, 99, 28, 0.05);
+    border-radius: 5px;
+
+}
+
+.second_under_banner {
+    background-color: rgba(28, 99, 28, 0.4)
+        ;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+
+.map_1 {
+    margin-left: 25px;
+    background-color:  rgba(255,255, 255, 0.5);
+}
+.heat1 {
+    float:left
+}
+
+.outer{
+    justify-content: space-evenly;
+}
+
+.right_text {
+    margin-left: 50%;
+}
+
+.halfway {
+    margin-right: 55%;
+    text-align: left;
+    float: left
+}

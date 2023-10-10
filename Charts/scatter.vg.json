@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Data/Scatterplot.csv"
+  },
+  "mark": "point",
+  "width": 800,
+  "height": 500,
+  "encoding": {
+    "opacity": {
+      "condition": {
+        "test": "test(regexp(search_input,'i'),datum.Entity)",
+        "value": 0.8
+      },
+      "value": 0.1
+    },
+    "tooltip": {"field": "Entity", "type": "nominal"},
+    "x": {
+      "field": "Deaths",
+      "type": "quantitative",
+      "title": "Infant Mortality Rate(%)"
+    },
+    "y": {"field": "GDP", "type": "quantitative"},
+    "color": {"field": "Continent", "type": "nominal"},
+    "size": {"field": "Population", "type": "quantitative"}
+  },
+  "params": [
+    {
+      "name": "search_input",
+      "bind": {"input": "search", "placeholder": "Country", "name": "Search"},
+      "value": ""
+    }
+  ],
+  "config": {}
+}

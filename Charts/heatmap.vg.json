@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Data/Covid-19%20Daily%20Hospitalizations.csv"
+  },
+  "height": 300,
+  "width": 400,
+  "transform": [{"filter": "datum.year == '2022' "}],
+  "title": "Daily Number of Covid-19 Hospitlizations",
+  "config": {"view": {"strokeWidth": 0, "step": 13}, "axis": {"domain": false}},
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "timeUnit": "date",
+      "type": "ordinal",
+      "title": "Day",
+      "axis": {"labelAngle": 0, "format": "%e"}
+    },
+    "y": {
+      "field": "date",
+      "timeUnit": "month",
+      "type": "ordinal",
+      "title": "Month"
+    },
+    "color": {
+      "field": "hosp_patients_per_million",
+      "aggregate": "max",
+      "type": "quantitative",
+      "legend": {"title": null}
+    }
+  }, 
+  "config": {
+    "background": "transparent"
+  }
+}

@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "height": 500,
-    "width": 800,
+    "height": 400,
+    "width": 400,
     "title": "State Expenditure on Health across Australia",
     "data": {
       "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Data/Bubble_plot_data.csv"

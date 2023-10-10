@@ -8,28 +8,169 @@
     
     <!-- CSS file -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    <link rel="stylesheet"type="text/css" href="css/layout.css" media="all">
+
+
+    <!--Typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+
+
+    <!--Pure Css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+
+
 
 </head>
 <body>
-    <p> "Look at this graph" </p>
-    <div id="map1"></div>
+<!-- Australia as a Whole-->
+  <h1>Australian Health</h1>
+  <div class="pure-g">
+      <div class="pure-u-1-5"></div>
+      <div class="pure-u-3-5">
+      <div class = first_background style="border-radius:5px">
+      <div class ="first_banner">
+      <h2>Health across Australia as a Whole</h2>
+      </div>
+      <div class ="first_under_banner">
+      <h3> Health Expenditure</h3></div>
+        <div class ="pure-u-1">
+        <div class="map_1" id="map1" ></div>
 
-    <script type="text/javascript">
+        <!-- This was taken from google bard with the prompt "I want to align text both left and right in the same division"-->
+        <div style="display: flex; justify-content: space-between;">
+          <p style="flex: 1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibu</p>
+          <p style="flex: 1; max-width: 50%;">Key Facts <br>
+            - Blah Blah Blah
+            <br>
+            - Blah Blah Blah
+          </p>
+        </div>
+      </div>
+      
+      <!--Second Graph-->
+      <div class = "first_under_banner">
+      <h3> COVID-19 Daily Averages</h3>
+    </div>
+      <div class = "pure-u-1"> 
+        <div class = "heat1" id ="heat"> 
+        </div>
+        <p class="right_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+          Interdum et malesuada fames ac ante ipsum primis in faucibus.<br>
+        <br> 
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc venenatis quam eget aliquet aliquet. Cras vel fermentum turpis. 
+          Sed vel massa nisl. Vestibulum dignissim est et pharetra auctor.
+      </p>
 
-        var spec2 = "charts/map1.vg.json";
-        vegaEmbed('#map1',spec2).then(function(result) {
-          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
-      </script>
-    
+
+      </div>
+
+
+
+
+      <!-- Scatter plot -->
+      <div class ="first_under_banner">
+        <h3> Health Expenditure per capita versus Infant Mortality Rate</h3></div>
+          <div class ="pure-u-1">
+          <div class="map_1" id="scatter" ></div>
+  
+          <!-- This was taken from google bard with the prompt "I want to align text both left and right in the same division"-->
+          <div style="display: flex; justify-content: space-between;">
+            <p style="flex: 1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+              Interdum et malesuada fames ac ante ipsum primis in faucibus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+              Interdum et malesuada fames ac ante ipsum primis in faucibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+              Interdum et malesuada fames ac ante ipsum primis in faucibu</p>
+            <p style="flex: 1; max-width: 50%;">Key Facts <br>
+              - Blah Blah Blah
+              <br>
+              - Blah Blah Blah
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+<!--Section on Within Australia Statistics-->
+<div class="pure-g">
+  <div class="pure-u-1-5"></div>
+  <div class="pure-u-3-5">
+  <div class = second_background style="border-radius:5px">
+  <div class ="second_banner">
+  <h2>Health across Australia as a Whole</h2>
+  </div>
+  <div class ="second_under_banner">
+  <h3> Health Expenditure</h3></div>
+    <div class ="pure-u-1">
+    <div class="map_1" id="map2" ></div>
+
+    <!-- This was taken from google bard with the prompt "I want to align text both left and right in the same division"-->
+    <div style="display: flex; justify-content: space-between;">
+      <p style="flex: 1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+        Interdum et malesuada fames ac ante ipsum primis in faucibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+        Interdum et malesuada fames ac ante ipsum primis in faucibu</p>
+      <p style="flex: 1; max-width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+        Interdum et malesuada fames ac ante ipsum primis in faucibuss</p>
+    </div>
+  </div>
+  
+  <!--Second Graph-->
+  <div class = "second_under_banner">
+  <h3> State Expenditure per capita by State and Population</h3>
+</div>
+  <div class = "pure-u-1"> 
+    <div class = "heat1" id ="bubble"> 
+    </div>
+    <p class="right_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
+      Interdum et malesuada fames ac ante ipsum primis in faucibus.<br>
+    <br> 
+    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc venenatis quam eget aliquet aliquet. Cras vel fermentum turpis. 
+      Sed vel massa nisl. Vestibulum dignissim est et pharetra auctor.
+  </p>
+
+
+  </div>
+  <div class = "second_under_banner">
+    <h3></h3>
+
+  </div>
+  
+  </div>
+
+</div>
+</div>
+
+ 
 </body>
 
-<body>
-<p>
-  "This one has a filter, alongside tooltips and text annotations for important/best reviewed hospitals
-  from google"
-</p>
-<div id="map2"></div>
+
+
+<!--Charts-->
+<script type="text/javascript">
+  
+  var spec2 = "charts/map1.vg.json";
+  vegaEmbed('#map1',spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
 <script type="text/javascript">
 
         var spec1 = "charts/map2.vg.json";
@@ -39,18 +180,33 @@
       </script>
 
 
+<script type="text/javascript">
+        var spec = "charts/bubble.vg.json";
+        vegaEmbed('#bubble',spec).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+      </script>
 
-<p>
-This here is a graph with legend interactivity 
 
-</p>
-      <div id="bubble"></div>
       <script type="text/javascript">
-              var spec = "charts/bubble.vg.json";
-              vegaEmbed('#bubble',spec).then(function(result) {
-                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-              }).catch(console.error);
-            </script>
+        var spec4 = "charts/heatmap.vg.json";
+        vegaEmbed('#heat',spec4).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+      </script>
 
-</body>
+
+
+      <script type="text/javascript">
+        var spec5 = "charts/scatter.vg.json";
+        vegaEmbed('#scatter',spec5).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+      </script>
+
+
+
+
+
+
 </html>

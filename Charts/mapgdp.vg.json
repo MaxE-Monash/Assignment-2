@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Expenditure of Nations on Health, Per Capita",
-    "width": 900,
-    "height": 500,
+    "width": 800,
+    "height": 400,
     "data": {
       "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
       "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
@@ -63,11 +63,17 @@
               "format": ".2f"
             }
           ]
+        
         }
-      }
+      },
+
+      {
+        "data" : {
+          "url": ""
+        }
+        }
+      
 
     ],
-    "config": {
-      "background": "transparent"
-    }
+    "config": {}
   }
