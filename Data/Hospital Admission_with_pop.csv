@@ -1,109 +1,109 @@
-State	Year	Type	Admission	Population	Per1k
-Australian Capital Territory	2017	Public	116053	454499	255.34
-Australian Capital Territory	2018	Public	118483	454499	260.69
-Australian Capital Territory	2019	Public	118737	454499	261.25
-Australian Capital Territory	2019	Private	0	454499	0
-Australian Capital Territory	2019	All	0	454499	0
-Australian Capital Territory	2020	Public	129547	454499	285.03
-Australian Capital Territory	2020	Private	0	454499	0
-Australian Capital Territory	2020	All	0	454499	0
-Australian Capital Territory	2021	Public	121079	454499	266.4
-Australian Capital Territory	2021	Private	0	454499	0
-Australian Capital Territory	2021	All	0	454499	0
-New South Wales	2017	Public	1860985	7833463	237.57
-New South Wales	2017	Private	1342911	7833463	171.43
-New South Wales	2017	All	3203896	7833463	409
-New South Wales	2018	Public	1881814	7934688	237.16
-New South Wales	2018	Private	1372661	7934688	172.99
-New South Wales	2018	All	3254475	7934688	410.16
-New South Wales	2019	Public	1809760	8032991	225.29
-New South Wales	2019	Private	1253139	8032991	156
-New South Wales	2019	All	3062899	8032991	381.29
-New South Wales	2020	Public	1898959	8112001	234.09
-New South Wales	2020	Private	1453573	8112001	179.19
-New South Wales	2020	All	3352532	8112001	413.28
-New South Wales	2021	Public	1768912	8072163	219.14
-New South Wales	2021	Private	1359031	8072163	168.36
-New South Wales	2021	All	3127943	8072163	387.5
-Northern Territory	2017	Public	167816	413017	406.32
-Northern Territory	2018	Public	176812	423810	417.2
-Northern Territory	2019	Public	181489	433801	418.37
-Northern Territory	2019	Private	0	433801	0
-Northern Territory	2019	All	0	433801	0
-Northern Territory	2020	Public	182370	443035	411.64
-Northern Territory	2020	Private	0	443035	0
-Northern Territory	2020	All	0	443035	0
-Northern Territory	2021	Public	172211	232605	740.36
-Northern Territory	2021	Private	0	232605	0
-Northern Territory	2021	All	0	232605	0
-Queensland	2017	Public	1486922	4906370	303.06
-Queensland	2017	Private	1134921	4906370	231.32
-Queensland	2017	All	2621843	4906370	534.38
-Queensland	2018	Public	1567524	4985955	314.39
-Queensland	2018	Private	1164376	4985955	233.53
-Queensland	2018	All	2731900	4985955	547.92
-Queensland	2019	Public	1596532	5070306	314.88
-Queensland	2019	Private	1128472	5070306	222.56
-Queensland	2019	All	2725004	5070306	537.44
-Queensland	2020	Public	1685357	5154305	326.98
-Queensland	2020	Private	1245123	5154305	241.57
-Queensland	2020	All	2930480	5154305	568.55
-Queensland	2021	Public	1720372	5156138	333.66
-Queensland	2021	Private	1225399	5156138	237.66
-Queensland	2021	All	2945771	5156138	571.31
-South Australia	2017	Public	440060	1725253	255.07
-South Australia	2017	Private	338493	1725253	196.2
-South Australia	2017	All	778553	1725253	451.27
-South Australia	2018	Public	449386	1742255	257.93
-South Australia	2018	Private	349054	1742255	200.35
-South Australia	2018	All	798440	1742255	458.28
-South Australia	2019	Public	446766	1762889	253.43
-South Australia	2019	Private	336941	1762889	191.13
-South Australia	2019	All	783707	1762889	444.56
-South Australia	2020	Public	466248	1787847	260.79
-South Australia	2020	Private	346048	1787847	193.56
-South Australia	2020	All	812296	1787847	454.34
-South Australia	2021	Public	466236	1781516	261.71
-South Australia	2021	Private	350699	1781516	196.85
-South Australia	2021	All	816935	1781516	458.56
-Tasmania	2017	Public	128746	524574	245.43
-Tasmania	2018	Public	135528	534754	253.44
-Tasmania	2019	Public	130473	545803	239.05
-Tasmania	2019	Private	0	545803	0
-Tasmania	2019	All	0	545803	0
-Tasmania	2020	Public	140192	555975	252.16
-Tasmania	2020	Private	0	555975	0
-Tasmania	2020	All	0	555975	0
-Tasmania	2021	Public	157344	557571	282.2
-Tasmania	2021	Private	0	557571	0
-Tasmania	2021	All	0	557571	0
-Victoria	2017	Public	1846342	6278555	294.07
-Victoria	2017	Private	1061888	6278555	169.13
-Victoria	2017	All	2908230	6278555	463.2
-Victoria	2018	Public	1899314	6398586	296.83
-Victoria	2018	Private	1085591	6398586	169.66
-Victoria	2018	All	2984905	6398586	466.49
-Victoria	2019	Public	1834131	6518716	281.36
-Victoria	2019	Private	1025256	6518716	157.28
-Victoria	2019	All	2859387	6518716	438.64
-Victoria	2020	Public	1822038	6616636	275.37
-Victoria	2020	Private	1075759	6616636	162.58
-Victoria	2020	All	2897797	6616636	437.96
-Victoria	2021	Public	1814006	6503491	278.93
-Victoria	2021	Private	1083287	6503491	166.57
-Victoria	2021	All	2897293	6503491	445.5
-Western Australia	2017	Public	600691	2579276	232.89
-Western Australia	2017	Private	513839	2579276	199.22
-Western Australia	2017	All	1114530	2579276	432.11
-Western Australia	2018	Public	616435	2610320	236.15
-Western Australia	2018	Private	512570	2610320	196.36
-Western Australia	2018	All	1129005	2610320	432.52
-Western Australia	2019	Public	612154	2649641	231.03
-Western Australia	2019	Private	504158	2649641	190.27
-Western Australia	2019	All	1116312	2649641	421.31
-Western Australia	2020	Public	644476	2706350	238.13
-Western Australia	2020	Private	559132	2706350	206.6
-Western Australia	2020	All	1203608	2706350	444.73
-Western Australia	2021	Public	616935	2660026	231.93
-Western Australia	2021	Private	549530	2660026	206.59
-Western Australia	2021	All	1166465	2660026	438.52
+﻿State,Year,Type,Admission,Population,Per1k
+Australian Capital Territory,2017,Public,116053.00,454499.00,255.34
+Australian Capital Territory,2018,Public,118483.00,454499.00,260.69
+Australian Capital Territory,2019,Public,118737.00,454499.00,261.25
+Australian Capital Territory,2019,Private,0.00,454499.00,0.00
+Australian Capital Territory,2019,All,0.00,454499.00,0.00
+Australian Capital Territory,2020,Public,129547.00,454499.00,285.03
+Australian Capital Territory,2020,Private,0.00,454499.00,0.00
+Australian Capital Territory,2020,All,0.00,454499.00,0.00
+Australian Capital Territory,2021,Public,121079.00,454499.00,266.40
+Australian Capital Territory,2021,Private,0.00,454499.00,0.00
+Australian Capital Territory,2021,All,0.00,454499.00,0.00
+New South Wales,2017,Public,1860985.00,7833463.00,237.57
+New South Wales,2017,Private,1342911.00,7833463.00,171.43
+New South Wales,2017,All,3203896.00,7833463.00,409.00
+New South Wales,2018,Public,1881814.00,7934688.00,237.16
+New South Wales,2018,Private,1372661.00,7934688.00,172.99
+New South Wales,2018,All,3254475.00,7934688.00,410.16
+New South Wales,2019,Public,1809760.00,8032991.00,225.29
+New South Wales,2019,Private,1253139.00,8032991.00,156.00
+New South Wales,2019,All,3062899.00,8032991.00,381.29
+New South Wales,2020,Public,1898959.00,8112001.00,234.09
+New South Wales,2020,Private,1453573.00,8112001.00,179.19
+New South Wales,2020,All,3352532.00,8112001.00,413.28
+New South Wales,2021,Public,1768912.00,8072163.00,219.14
+New South Wales,2021,Private,1359031.00,8072163.00,168.36
+New South Wales,2021,All,3127943.00,8072163.00,387.50
+Northern Territory,2017,Public,167816.00,413017.00,406.32
+Northern Territory,2018,Public,176812.00,423810.00,417.20
+Northern Territory,2019,Public,181489.00,433801.00,418.37
+Northern Territory,2019,Private,0.00,433801.00,0.00
+Northern Territory,2019,All,0.00,433801.00,0.00
+Northern Territory,2020,Public,182370.00,443035.00,411.64
+Northern Territory,2020,Private,0.00,443035.00,0.00
+Northern Territory,2020,All,0.00,443035.00,0.00
+Northern Territory,2021,Public,172211.00,232605.00,740.36
+Northern Territory,2021,Private,0.00,232605.00,0.00
+Northern Territory,2021,All,0.00,232605.00,0.00
+Queensland,2017,Public,1486922.00,4906370.00,303.06
+Queensland,2017,Private,1134921.00,4906370.00,231.32
+Queensland,2017,All,2621843.00,4906370.00,534.38
+Queensland,2018,Public,1567524.00,4985955.00,314.39
+Queensland,2018,Private,1164376.00,4985955.00,233.53
+Queensland,2018,All,2731900.00,4985955.00,547.92
+Queensland,2019,Public,1596532.00,5070306.00,314.88
+Queensland,2019,Private,1128472.00,5070306.00,222.56
+Queensland,2019,All,2725004.00,5070306.00,537.44
+Queensland,2020,Public,1685357.00,5154305.00,326.98
+Queensland,2020,Private,1245123.00,5154305.00,241.57
+Queensland,2020,All,2930480.00,5154305.00,568.55
+Queensland,2021,Public,1720372.00,5156138.00,333.66
+Queensland,2021,Private,1225399.00,5156138.00,237.66
+Queensland,2021,All,2945771.00,5156138.00,571.31
+South Australia,2017,Public,440060.00,1725253.00,255.07
+South Australia,2017,Private,338493.00,1725253.00,196.20
+South Australia,2017,All,778553.00,1725253.00,451.27
+South Australia,2018,Public,449386.00,1742255.00,257.93
+South Australia,2018,Private,349054.00,1742255.00,200.35
+South Australia,2018,All,798440.00,1742255.00,458.28
+South Australia,2019,Public,446766.00,1762889.00,253.43
+South Australia,2019,Private,336941.00,1762889.00,191.13
+South Australia,2019,All,783707.00,1762889.00,444.56
+South Australia,2020,Public,466248.00,1787847.00,260.79
+South Australia,2020,Private,346048.00,1787847.00,193.56
+South Australia,2020,All,812296.00,1787847.00,454.34
+South Australia,2021,Public,466236.00,1781516.00,261.71
+South Australia,2021,Private,350699.00,1781516.00,196.85
+South Australia,2021,All,816935.00,1781516.00,458.56
+Tasmania,2017,Public,128746.00,524574.00,245.43
+Tasmania,2018,Public,135528.00,534754.00,253.44
+Tasmania,2019,Public,130473.00,545803.00,239.05
+Tasmania,2019,Private,0.00,545803.00,0.00
+Tasmania,2019,All,0.00,545803.00,0.00
+Tasmania,2020,Public,140192.00,555975.00,252.16
+Tasmania,2020,Private,0.00,555975.00,0.00
+Tasmania,2020,All,0.00,555975.00,0.00
+Tasmania,2021,Public,157344.00,557571.00,282.20
+Tasmania,2021,Private,0.00,557571.00,0.00
+Tasmania,2021,All,0.00,557571.00,0.00
+Victoria,2017,Public,1846342.00,6278555.00,294.07
+Victoria,2017,Private,1061888.00,6278555.00,169.13
+Victoria,2017,All,2908230.00,6278555.00,463.20
+Victoria,2018,Public,1899314.00,6398586.00,296.83
+Victoria,2018,Private,1085591.00,6398586.00,169.66
+Victoria,2018,All,2984905.00,6398586.00,466.49
+Victoria,2019,Public,1834131.00,6518716.00,281.36
+Victoria,2019,Private,1025256.00,6518716.00,157.28
+Victoria,2019,All,2859387.00,6518716.00,438.64
+Victoria,2020,Public,1822038.00,6616636.00,275.37
+Victoria,2020,Private,1075759.00,6616636.00,162.58
+Victoria,2020,All,2897797.00,6616636.00,437.96
+Victoria,2021,Public,1814006.00,6503491.00,278.93
+Victoria,2021,Private,1083287.00,6503491.00,166.57
+Victoria,2021,All,2897293.00,6503491.00,445.50
+Western Australia,2017,Public,600691.00,2579276.00,232.89
+Western Australia,2017,Private,513839.00,2579276.00,199.22
+Western Australia,2017,All,1114530.00,2579276.00,432.11
+Western Australia,2018,Public,616435.00,2610320.00,236.15
+Western Australia,2018,Private,512570.00,2610320.00,196.36
+Western Australia,2018,All,1129005.00,2610320.00,432.52
+Western Australia,2019,Public,612154.00,2649641.00,231.03
+Western Australia,2019,Private,504158.00,2649641.00,190.27
+Western Australia,2019,All,1116312.00,2649641.00,421.31
+Western Australia,2020,Public,644476.00,2706350.00,238.13
+Western Australia,2020,Private,559132.00,2706350.00,206.60
+Western Australia,2020,All,1203608.00,2706350.00,444.73
+Western Australia,2021,Public,616935.00,2660026.00,231.93
+Western Australia,2021,Private,549530.00,2660026.00,206.59
+Western Australia,2021,All,1166465.00,2660026.00,438.52
