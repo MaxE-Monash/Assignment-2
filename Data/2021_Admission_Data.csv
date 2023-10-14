@@ -1,12 +1,10 @@
 ﻿State,Year,Type,Admission,Population,Per1k
 Australian Capital Territory,2021,Public,121079,454499,266.4
-Australian Capital Territory,2021,Private,,454499,
 Australian Capital Territory,2021,All,121079,454499,266.4010262
 New South Wales,2021,Public,1768912,8072163,219.14
 New South Wales,2021,Private,1359031,8072163,168.36
 New South Wales,2021,All,3127943,8072163,387.5
 Northern Territory,2021,Public,172211,232605,740.36
-Northern Territory,2021,Private,,232605,
 Northern Territory,2021,All,172211,232605,740.3581178
 Queensland,2021,Public,1720372,5156138,333.66
 Queensland,2021,Private,1225399,5156138,237.66
@@ -15,7 +13,6 @@ South Australia,2021,Public,466236,1781516,261.71
 South Australia,2021,Private,350699,1781516,196.85
 South Australia,2021,All,816935,1781516,458.56
 Tasmania,2021,Public,157344,557571,282.2
-Tasmania,2021,Private,,557571,
 Tasmania,2021,All,157344,557571,282.1954513
 Victoria,2021,Public,1814006,6503491,278.93
 Victoria,2021,Private,1083287,6503491,166.57
