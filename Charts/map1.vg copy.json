@@ -14,23 +14,13 @@
         "step": 1,
         "name": "Year:  "
       }
-    },
-    {
-      "name": "Hide_Points",
-      "value": "true",
-      "bind": {
-        "input": "select",
-        "options": ["null","true"],
-        "labels": ["Visible", "Invisible"],
-        "name": "Point Visibility"
-      }
     }
   ],
   "projection": {"type": "equalEarth"},
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Maps/ne_110m_admin_0_countries.topojson",
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
       },
       "transform": [
@@ -49,7 +39,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Maps/oceans.topojson",
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
       "mark": {"type": "geoshape", "fill": "skyblue"}
@@ -70,7 +60,7 @@
           "lookup": "Entity",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Maps/ne_110m_admin_0_countries.topojson",
+              "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
               "format": {
                 "type": "topojson",
                 "feature": "ne_110m_admin_0_countries"
@@ -89,7 +79,7 @@
           "field": "GDP",
           "type": "quantitative",
           "legend": {"format": ".2s"},
-          "scale": {"type": "log", "domain": [30, 11000],"scheme":"tealblues"}
+          "scale": {"type": "log", "domain": [30, 11000]}
         },
         "tooltip": [
           {"field": "Entity", "type": "nominal", "title": "Country"},
@@ -107,24 +97,21 @@
       "data": {
         "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Data/Life_size.csv"
       },
-      "mark": "circle",
-      "transform": [{"filter": "datum.Year == Year_selection"},{"filter": "Hide_Points == 'null'"}],
+      "mark": "point",
+      "transform": [{"filter": "datum.Year == Year_selection"}],
       "encoding": {
         "latitude": {"field": "latitude", "type": "quantitative"},
         "longitude": {"field": "longitude", "type": "quantitative"},
-        "color": {
+        "size": {
           "field": "Life expectancy (period) at birth - Sex: all - Age: 0",
           "type": "quantitative",
-          "title": "Life",
-          "scale": {"domain": [50, 90], "range":["yellow","purple"]},
-          "legend": {"format": ".0s", "title": "Life Expectancy"}
+          "title": "Population",
+          "scale": {"domain": [50, 90], "range":[1,20]},
+          "legend": {"format": ".0s", "title": "Population"}
         },
-        "size": {"value":30}
+        "color": {"value": "orange"}
       }
     }
   ],
-  "resolve": {
-    "legend": {"color": "independent"},
-    "scale": {"color": "independent"}},
   "config": {"background": "transparent"}
 }
