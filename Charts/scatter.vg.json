@@ -3,6 +3,10 @@
   "data": {
     "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Data/Scatterplot.csv"
   },
+  "title":{"text":"Health Expenditure per capita versus Infant Mortality Rate", "fontSize":20} , 
+  "transform": [
+    {"filter": "datum.Continent == Cont_selection ||Cont_selection == null "}
+  ],
   "mark": "point",
   "width": 800,
   "height": 500,
@@ -14,22 +18,126 @@
       },
       "value": 0.1
     },
-    "tooltip": {"field": "Entity", "type": "nominal"},
+    "tooltip": [
+      {"field": "Entity", "type": "nominal"},
+      {
+        "field": "Deaths",
+        "type": "quantitative",
+        "format": ".2f",
+        "title": "Infant Mortality Rate %"
+      },
+      {
+        "field": "GDP",
+        "type": "quantitative",
+        "format": ".2f",
+        "title": "Health Expenditure per capita"
+      }
+    ],
     "x": {
       "field": "Deaths",
       "type": "quantitative",
-      "title": "Infant Mortality Rate(%)"
+      "title": "Infant Mortality Rate(%)",
+      "scale": {"type": "linear", "domain": [0, 16]}
     },
-    "y": {"field": "GDP", "type": "quantitative"},
-    "color": {"field": "Continent", "type": "nominal"},
-    "size": {"field": "Population", "type": "quantitative"}
+    "y": {
+      "field": "GDP",
+      "type": "quantitative",
+      "scale": {"type": "linear", "domain": [0, 10000]}
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "range": [
+          "#648FFF",
+          "#473598",
+          "#8FB10B",
+          "#0D8C03",
+          "#81C188",
+          "#24C1D2"
+        ]
+      }
+    },
+    "fill": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "range": [
+          "#648FFF",
+          "#473598",
+          "#8FB10B",
+          "#0D8C03",
+          "#81C188",
+          "#24C1D2"
+        ]
+      }
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "range": [30, 50, 100, 150, 300, 400, 600],
+        "domain": [
+          10000000,
+          30000000,
+          60000000,
+          120000000,
+          250000000,
+          500000000,
+          1000000000
+        ]
+      },
+      "legend": {"format": ".1s"}
+    }
   },
   "params": [
     {
       "name": "search_input",
       "bind": {"input": "search", "placeholder": "Country", "name": "Search"},
       "value": ""
+    },
+    {
+      "name": "Cont_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "labels": [
+          "All",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "name": "Continent"
+      }
     }
   ],
-  "config": {}
+  "config": {"background":"transparent"}
 }

@@ -1,77 +1,101 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "height": 400,
-    "width": 400,
-    "title": "State Expenditure on Health across Australia",
-    "data": {
-      "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Data/Bubble_plot_data.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 400,
+  "width": 400,
+  "title": {
+    "text": "State Expenditure on Health across Australia",
+    "fontSize": 20
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/MaxE-Monash/Assignment-2/main/Data/Bubble_plot_data.csv"
+  },
+  "params": [
+    {
+      "name": "state_selection",
+      "select": {"type": "point", "fields": ["State"]},
+      "bind": "legend"
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.Expenditure * 1000000/datum.Population",
+      "as": "Expenditure per Capita"
+    }
+  ],
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "timeUnit": "year",
+      "title": "Year",
+      "scale": {"domain": [{"year": 2009}, {"year": 2021}]}
     },
-    "params": [
-      {
-        "name": "state_selection",
-        "select": {"type": "point", "fields": ["State"]},
-        "bind": "legend"
+    "y": {
+      "field": "Expenditure per Capita",
+      "title": "Health Expenditure per Capita",
+      "type": "quantitative",
+      "scale": {"type": "log", "domain": [5000, 10000]}
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [350000, 1000000, 2000000, 5000000, 7000000],
+        "range": [50, 100, 130, 150, 200, 270]
+      },
+      "legend": {"format": ".2s"}
+    },
+    "fill": {
+      "field": "State",
+      "type": "nominal",
+      "scale": {
+        "domain": ["NSW", "VIC", "ACT", "WA", "SA", "NT"],
+        "range": [
+          "#8FB10B",
+          "#984ea3",
+          "#ff7f00",
+          "#a6cee3",
+          "#377eb8",
+          "#a65628"
+        ]
       }
-    ],
-    "transform": [
-      {
-        "calculate": "datum.Expenditure * 1000000/datum.Population",
-        "as": "Expenditure per Capita"
+    },
+    "color": {
+      "field": "State",
+      "type": "nominal",
+      "scale": {
+        "domain": ["NSW", "VIC", "ACT", "WA", "SA", "NT"],
+        "range": [
+          "#8FB10B",
+          "#984ea3",
+          "#ff7f00",
+          "#24C1D2",
+          "#377eb8",
+          "#a65628"
+        ]
       }
-    ],
-    "mark": "point",
-    "encoding": {
-      "x": {"field": "Year", "type": "ordinal", "title": "Year"},
-      "y": {
+    },
+    "opacity": {
+      "condition": {"param": "state_selection", "value": 0.8},
+      "value": 0.2
+    },
+    "tooltip": [
+      {"field": "State", "type": "nominal"},
+      {"field": "Population", "type": "quantitative"},
+      {
         "field": "Expenditure per Capita",
         "type": "quantitative",
-        "axis": {"tickCount": 20},
-        "scale": {"type": "log", "domain": [5500, 20000]}
+        "format": ".2f",
+        "title": "Expenditure per Capita(Thousands)"
       },
-      "size": {
-        "field": "Population",
+      {
+        "field": "Expenditure",
         "type": "quantitative",
-        "scale": {"range": [10, 100]}
-      },
-      "fill": {
-        "field": "State",
-        "type": "nominal",
-        "scale": {
-          "domain": ["NSW", "VIC", "ACT", "WA", "SA", "NT"],
-          "range": [
-            "#e41a1c",
-            "#984ea3",
-            "#ff7f00",
-            "#a6cee3",
-            "#377eb8",
-            "#a65628"
-          ]
-        }
-      },
-      "color": {
-        "field": "State",
-        "type": "nominal",
-        "scale": {
-          "domain": ["NSW", "VIC", "ACT", "WA", "SA", "NT"],
-          "range": [
-            "#e41a1c",
-            "#984ea3",
-            "#ff7f00",
-            "#a6cee3",
-            "#377eb8",
-            "#a65628"
-          ]
-        }
-      },
-      "opacity": {
-        "condition": {"param": "state_selection", "value": 0.8},
-        "value": 0.2
-      },
-      "tooltip": [
-        {"field": "State", "type": "nominal"},
-        {"field": "Expenditure per Capita", "type": "quantitative", "format": ".2f"},
-        {"field": "Expenditure", "type": "quantitative", "format": ".2f" , "title": "Overall Expenditure (Millions)"}
-      ]
-    },
-    "config": {}
-  }
+        "format": ".2f",
+        "title": "Overall Expenditure (Millions)"
+      }
+    ]
+  },
+  "config": {"background": "transparent"}
+}
