@@ -6,17 +6,16 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
 
-
     
     <!-- CSS file -->
-    <link rel="stylesheet" type="text/css" href="./Css/styles.css" media="all">
-    <link rel="stylesheet"type="text/css" href="./Css/layout.css" media="all">
+    <link rel="stylesheet" type="text/css" href="Css/styles.css" media="all">
+    <link rel="stylesheet"type="text/css" href="Css/layout.css" media="all">
 
 
     <!--Typeface-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Onest:wght@700&display=swap" rel="stylesheet">
 
 
     <!--Pure Css-->
@@ -25,49 +24,65 @@
 
 
 
-
 </head>
-<body>
+<body class ="background">
 <!-- Australia as a Whole-->
-  <h1>Australian Health</h1>
+<div >
+  <h1 style="font-weight: bolder;">Australian Health <br></h1>
   <div class="pure-g">
-      <div class="pure-u-1-5"></div>
-      <div class="pure-u-3-5">
-      <div class = first_background style="border-radius:5px">
+      <div class="pure-u-1-5"> </div>
+      <div class="pure-u-3-5" style="background-color: white; border-radius:5px;">
+      <div class = first_background style="border-radius:5px; padding-left:5px;padding-right:5px;padding-top:5px">
       <div class ="first_banner">
-      <h2>Health across Australia as a Whole</h2>
+      Health across Australia and the Globe
       </div>
+      <br>
       <div class ="first_under_banner">
-      <h3> Health Expenditure</h3></div>
+      Health Expenditure</div>
         <div class ="pure-u-1">
-        <div class="map_1" id="map1" ></div>
+        <div class=" map_1" id="map1" ></div>
 
         <!-- This was taken from google bard with the prompt "I want to align text both left and right in the same division"-->
         <div style="display: flex; justify-content: space-between;">
-          <p style="flex: 1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-            Interdum et malesuada fames ac ante ipsum primis in faucibus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-            Interdum et malesuada fames ac ante ipsum primis in faucibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-            Interdum et malesuada fames ac ante ipsum primis in faucibu</p>
-          <p style="flex: 1; max-width: 50%;">Key Facts <br>
-            - Blah Blah Blah
-            <br>
-            - Blah Blah Blah
+          <p style="flex: 1; max-width:44%;">
+            <br> <br>
+            Globally, we can see over the span of 9 years from 2010-2019, <span class="map_1_text"> we can see that generally expenditure on health increased across nearly all nations </span>. <span class="map_1_text">Africa’s increase in spending</span> has been proportionally less, with <span>some nations spending regressing or stagnating over the ten year period</span>. A notable example of this is in "Chad". <br> <br>
+            <span class="map_1_text">Europe </span>seemed to be the most <span class="map_1_text">consistently affluent region when it comes to expenditure</span>. <span class="map_1_text">The United States of America seemed to expend the most money on health per person</span>, with an expenditure
+            of <span class="map_1_text">around ~11 thousand dollars per person in 2019</span>.
+            </p>
+          <p style="flex: 1; max-width: 80%; margin-right:3%"> <span class="l1">Key Facts </span>  <br> <br>
+            • Over the 9 Year period  <span class="map_1_text">Australia's spending increase by around ~47% </span> <br> <br>
+            • Largest single year increase was in 2018, with a jump of <span class="map_1_text"> ~400 dollars per individual in Australia </span> <br> <br>
+            • <span class="map_1_text"> Australia </span> and  <span class="map_1_text"> New Zealand </span>tended to dominate the Oceania's region expenditure, with an  <span class="map_1_text">expenditure 
+              more than double its any other oceanic inhabitant </span> <br> <br>
+          
+              • <span class="map_1_text">Population seemed to have less severe of an influence </span> on expenditure compared to <span class="map_1_text">continental location. </span>
+
+
           </p>
         </div>
       </div>
       
       <!--Second Graph-->
       <div class = "first_under_banner">
-      <h3> COVID-19 Daily Averages</h3>
+       COVID-19 Daily Averages in Australia
     </div>
       <div class = "pure-u-1"> 
         <div class = "heat1" id ="heat"> 
         </div>
-        <p class="right_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-          Interdum et malesuada fames ac ante ipsum primis in faucibus.<br>
+        <p class="right_text">Over the course of the COVID-19 pandemic, Australia’s daily rate of Covid-19 hospitalizations per 1 million people were recorded. This recording began on March 31st of 2020. 
+         <span class="map_1_text"> The trends of hospitalizations seen in 2020, were strongly marked by the general trends to utilize lockdowns to prevent the further spread of the virus. </span> This alongside fears of overwhelming the hospital capacity, drove infections down, reducing the number of hospitalizations down.
+          .<br>
         <br> 
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc venenatis quam eget aliquet aliquet. Cras vel fermentum turpis. 
-          Sed vel massa nisl. Vestibulum dignissim est et pharetra auctor.
+        
+•	<span class="map_1_text">In 2023 ,January was the month with the largest number of hospitalizations</span>, <span class="chloro_text"> approximately 107 hospitalizations per million  per day. </span>
+<br> <br>
+•	<span class="map_1_text">In 2022, was marked by severely more hospitalizations per million  </span> compared to previous years. With an average number of hospitalizations of  <span class="chloro_text">115 in January </span>,<span class="chloro_text">117 in July </span> and <span class="chloro_text">145 in August </span>
+<br> <br>
+•	2020 had relatively small amounts of hospitalizations, with the number of cases in 2020 spiking to around  <span class="chloro_text_2">~23 hospitalizations per million per day in August </span> .  
+<br> <br>
+•	<span class="map_1_text"> In 2021, The number of hospitalizations peaked on December 31</span>, with  <span class="chloro_text_2", style="color: rgba(120, 158, 42, 1);">61 hospitalizations per million people in Australia. </span> 
+
       </p>
 
 
@@ -78,20 +93,29 @@
 
       <!-- Scatter plot -->
       <div class ="first_under_banner">
-        <h3> Health Expenditure per capita versus Infant Mortality Rate</h3></div>
+        Infant Mortality Rate(%) Around the Globe</div>
           <div class ="pure-u-1">
-          <div class="map_1" id="scatter" ></div>
+          <div class="scatter" id="scatter" ></div>
   
           <!-- This was taken from google bard with the prompt "I want to align text both left and right in the same division"-->
           <div style="display: flex; justify-content: space-between;">
-            <p style="flex: 1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-              Interdum et malesuada fames ac ante ipsum primis in faucibus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-              Interdum et malesuada fames ac ante ipsum primis in faucibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-              Interdum et malesuada fames ac ante ipsum primis in faucibu</p>
-            <p style="flex: 1; max-width: 50%;">Key Facts <br>
-              - Blah Blah Blah
-              <br>
-              - Blah Blah Blah
+            <p style="flex: 1;">
+              <br>This visualization displays Health Expenditure per capita versus Infant Mortality rate in 2021 compared against population size and continent. 
+              Generally,  <span class="map_1_text"> The trends that we find is that higher rates of GDP expenditure strongly correlate with reduced infant mortality rate.  </span>
+              <br> <br>
+              <span class="map_1_text">While there are a few notable exceptions with high amounts of expenditure and relatively high levels of infant mortality</span> such as <span class="South"> Palua </span> and  <span class="South"> Nauru</span>  we see that the trend generally holds.<br>  
+              <span class="South"> Australia (0.39%) </span> is amongst the nations with the <span class="map_1_text"> lowest rates of infant mortality </span>, having lower rates compared to both <span class="Europe"> Switzerland (0.49%) </span>  and <span class="North"> The United States of America (0.68%) </span> 
+ 
+            </p>
+            <p style="flex: 1; max-width: 80%; margin-right:3%"> <span class="l1">Key Facts </span>  <br> 
+              •	<span class="Africa"> African</span> Countries tended to have the  <span class="map_1_text">  highest rates of infant mortality, while also having the lowest amount of GDP per capita health expenditure </span>. 
+              <br> <br>
+              •	<span class ="South">Australian and New Zealand</span> seemed to be outliers when compared to other countries within Oceania, being the only  <span class="map_1_text">  two nations to have below 1 % infant mortality rate. </span>
+<br><br>
+•	<span class="Asia">Asia</span> had the most broad distribution of nations in <span class="map_1_text">  both low and high mortality rates. </span>
+<br> <br>
+• <span class="Europe"> European</span> countries  <span class="map_1_text"> tended to have significantly lower infant mortaliy rates while also having higher expenditure </span>
+
             </p>
           </div>
         </div>
@@ -105,47 +129,76 @@
       </div>
 
     </div>
+    <div class="pure-u-1-5">
+      
     </div>
     </div>
 
 
-
+<br>
+<br>
 <!--Section on Within Australia Statistics-->
 <div class="pure-g">
   <div class="pure-u-1-5"></div>
-  <div class="pure-u-3-5">
-  <div class = second_background style="border-radius:5px">
+  <div class="pure-u-3-5" style="background-color: white; border-radius:5px;">
+  <div class = second_background style="border-radius:5px; padding-left:5px;padding-right:5px;padding-top:5px">
   <div class ="second_banner">
-  <h2>Health across Australia as a Whole</h2>
+  Health across Australian States 
   </div>
+  <br>
   <div class ="second_under_banner">
-  <h3> Health Expenditure</h3></div>
+    Hospital Locations across Australia
+  </div>
     <div class ="pure-u-1">
-    <div class="map_1" id="map2" ></div>
+    <div class="centre" id="map2" ></div>
 
     <!-- This was taken from google bard with the prompt "I want to align text both left and right in the same division"-->
     <div style="display: flex; justify-content: space-between;">
-      <p style="flex: 1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-        Interdum et malesuada fames ac ante ipsum primis in faucibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-        Interdum et malesuada fames ac ante ipsum primis in faucibu</p>
-      <p style="flex: 1; max-width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-        Interdum et malesuada fames ac ante ipsum primis in faucibuss</p>
+      <p style="flex: 1;">
+        The Visualization above displays the distribution of both <span class="map_1_text" style="color: rgba(10, 12, 180, 1);">Private</span> and <span class="map_1_text" style="color: rgb(209, 154, 16)">Public</span> Hospitals across the entirety of Australia alongside displaying the number of <span class="map_1_text"> Hospital Admissions per 1000 people </span>. 
+        Typically, what we find  broadly is that Hospitals are most densely found in the most populous regions of the country. <span class="map_1_text">Sparser areas </span>like the <span class="map_1_text"> Northern Territory </span> or  <span class="map_1_text">Tasmania </span> have <span class="map_1_text">significantly fewer hospitals </span> compared to  <span class="map_1_text">Victoria</span> or <span class="map_1_text">New South Wales</span>
+        <br> <br>
+        <span class="map_1_text" style="color: rgba(10, 12, 180, 1);">Private</span> <span class="map_1_text">ospitals are found closer towards larger metropolitan cities </span>. As there is likely to be a greater profit incentive to do so, alongside with an easier time finding staff. 
+        This would explain why there is a large density of <span class="map_1_text" style="color: rgba(10, 12, 180, 1);">Private</span> hospitals within these dense regions. 
+        <br>
+        Notably, Data for the <span class="map_1_text" style="color: rgba(10, 12, 180, 1);">Private</span> sector was not present for <span class="map_1_text"> Northern Territory </span>, the <span class="map_1_text"> ACT </span>and <span class="map_1_text"> Tasmania </span>.
+        </p>
+      <p style="flex: 1; max-width: 80%; margin-right:3%">
+
+        Interestingly, The <span class="map_1_text"> Northern Territory </span>was found to have the <span class="map_1_text" style="color: rgba(45, 150, 77, 1);">highest amounts of admissions per 1000 thousand people </span>. With a value of  <span class="map_1_text" style="color: rgba(45, 150, 77, 1);">740.36 admissions per thousand people </span>, within in the <span class="map_1_text" style="color: rgb(209, 154, 16)">Public </span>sector. 
+        This was significantly more than the second largest amount in the <span class="map_1_text" style="color: rgb(209, 154, 16)">Public</span> sector, being <span class="map_1_text">Queensland </span> with approximately <span class="map_1_text" style="color: rgb(123, 182, 57);">333.66 admissions per thousand people. </span> 
+        <br> <br> <br>
+        The difference may be caused by the lack of <span class="map_1_text" style="color: rgba(10, 12, 180, 1);">Private</span> hospitals in the <span class="map_1_text"> Northern Territory </span>, causing more elective surgeries to also be covered by the <span class="map_1_text" style="color: rgb(209, 154, 16)">Public</span> hospitals, inflating admissions. 
+
+
+        <br> <br>
+        The Hospitals listed amongst the map are commonly listed as amongst the best in the entirety of Australia. 
+        <br>
+        <br>
+        <small> <a href="https://medrecruit.medworld.com/articles/top-hospitals-in-australia">Source: medrecruit </a> </small>
+
+
+      </p>
     </div>
   </div>
   
   <!--Second Graph-->
   <div class = "second_under_banner">
-  <h3> State Expenditure per capita by State and Population</h3>
+  State Expenditure per capita by State and Population
 </div>
   <div class = "pure-u-1"> 
     <div class = "heat1" id ="bubble"> 
     </div>
-    <p class="right_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tincidunt odio, nec ullamcorper urna gravida nec. 
-      Interdum et malesuada fames ac ante ipsum primis in faucibus.<br>
+    <p class="right_text">The visualization on the left displays the overall trends of Health Expenditure per capita by Year, State and Population The overlying trends of the data has <span class="SA">Southern Australia </span>displaying the <span class="map_1_text">highest rates of Expenditure per capita until 2018</span>. Following 2018, the <span class="ACT">Australian Capital Territories</span>  rose by <span class="map_1_text">about 6 hundred dollars each year until 2020</span>.<br>
     <br> 
-    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc venenatis quam eget aliquet aliquet. Cras vel fermentum turpis. 
-      Sed vel massa nisl. Vestibulum dignissim est et pharetra auctor.
+    <span class="SA">Southern Australia's </span> expenditure in 2016 was <span class="map_1_text">remarkably larger than all other states across all following and previous years</span>. This was due to a one-off development project occurring, causing expenditure per person to surge by ~1.6k.
+    <br>
+    <br>
+    
+    <span class="NT">Northern Territory </span> tended to have the least amount of expenditure, both overall and per person. <span class="map_1_text">2011 was the only year where expenditure was following the trends</span> of other states, with <span class="map_1_text">xpenditure being 7119.54 per person</span>. Following that year, <span class="map_1_text">there was a significant reduction in expenditure until 2016-2017</span>, where it once again began to fall. 
+<br> <br>
+Generally,  <span class="map_1_text">all other states expenditure seemed to form a line from ~7200-500$ per person in 2010, to ~8500$ in 2020. </span> This seems to suggest that perhaps smaller territories could be likely to be more variable in their expenditure. 
+
   </p>
 
 
@@ -160,7 +213,7 @@
 </div>
 </div>
 
- 
+</div> 
 </body>
 
 
@@ -176,15 +229,15 @@
 
 <script type="text/javascript">
 
-        var spec1 = "./Charts/map2.vg.json";
-        vegaEmbed('#map2',spec1).then(function(result) {
+        var spec1 = "Charts/map2.vg.json";
+        vegaEmbed('#map2',spec1, {"actions": false}).then(function(result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
       </script>
 
 
 <script type="text/javascript">
-        var spec = "./Charts/bubble.vg.json";
+        var spec = "Charts/bubble.vg.json";
         vegaEmbed('#bubble',spec).then(function(result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
@@ -192,7 +245,7 @@
 
 
       <script type="text/javascript">
-        var spec4 = "./Charts/heatmap.vg.json";
+        var spec4 = "Charts/heatmap.vg.json";
         vegaEmbed('#heat',spec4).then(function(result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
@@ -201,7 +254,7 @@
 
 
       <script type="text/javascript">
-        var spec5 = "./Charts/scatter.vg.json";
+        var spec5 = "Charts/scatter.vg.json";
         vegaEmbed('#scatter',spec5).then(function(result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);

@@ -1,31 +1,62 @@
+.background {
+    background: url("../Data/26807.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
 
 
 .first_banner {
     background-color: rgba(50, 88, 168, 0.5);
     border-radius: 5px;
-    width: 450px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 50%;
+    font-weight: 600;
+	text-align: center;
+    font-size: 25px;
+    font-family: 'Onest';
 }
 
 .first_under_banner {
     background-color: rgba(50, 88, 168, 0.4);
     border-radius: 4px;
-    margin-left: 5px;
+    box-sizing: border-box;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Onest';
+	font-weight: 550;
+    font-size: 22px;
+
 }
 
 .first_background {
-    background-color: rgba(50, 88, 168, 0.05);
+    background-color: rgba(50, 88, 168, 0.1);
     border-radius: 5px;
+    background-image: none ;
+    z-index: 1;
 
 }
 
 .second_banner {
     background-color: rgba(28, 99, 28, 0.5);
     border-radius: 5px;
-    width: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 60%;
+    font-weight: 600;
+	text-align: center;
+    font-size: 25px;
+    font-family: 'Onest';
 }
 
 .second_background {
-    background-color: rgba(28, 99, 28, 0.05);
+    background-color: rgba(28, 99, 28, 0.1);
     border-radius: 5px;
 
 }
@@ -34,13 +65,18 @@
     background-color: rgba(28, 99, 28, 0.4)
         ;
     border-radius: 4px;
-    margin-left: 5px;
+        padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Onest';
+	font-weight: 550;
+    font-size: 22px;
 }
 
 
 .map_1 {
-    margin-left: 25px;
-    background-color:  rgba(255,255, 255, 0.5);
+    margin-left: 12%;
+    background-color:  rgba(255,255, 255, 0.1);
 }
 .heat1 {
     float:left
@@ -52,6 +88,7 @@
 
 .right_text {
     margin-left: 50%;
+    margin-right: 5%
 }
 
 .halfway {
@@ -59,3 +96,11 @@
     text-align: left;
     float: left
 }
+
+.scatter {
+    margin-left: 10%;
+}
+
+
+
+

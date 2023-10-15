@@ -15,15 +15,128 @@ h2 {
 h3 {
 	font-family: 'Inter';
 	font-weight: 550;
-	text-align: center;
 
 }
+
+.vega-bind-name {
+	font-family: 'Inter';
+	margin-left: 30px;
+    
+
+}
+
+
 
 p {
 	font-family: 'Inter';
 	margin-left: 30px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.map_1_text {
+	font-family: 'Inter';
+	color: rgba(0, 0, 0, 1);
+	font-weight: bold;
+
+
+}
+
+.l1 {
+	font-family: 'Inter';
+	font-weight: 500;
+	color: rgba(0, 0, 0, 1);
+	margin-left: 40%;
+
+}
+
+.chloro_text {
+    color: rgba(32, 61, 145, 1);
+    font-weight: bold;
+}
+
+.chloro_text_2 {
+    color: rgb(138, 183, 48);
+    font-weight: bold;
 }
 
 
+.private {
+	color: rgb(138, 183, 48);
+}
 
 /* Texts */
+
+.Africa {
+    color: #648FFF;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+.Asia {
+    color: #473598;
+    font-family: 'Inter';
+    font-weight: bold
+}
+
+.Europe {
+    color: #8FB10B;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.North {
+    color: #0D8C03;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.South {
+    color: #81C188 ;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.OCE {
+    color: #24C1D2;
+    font-family: 'Inter';
+    font-weight: bold;
+
+}
+
+/* Text */
+.NSW {
+    color: #8FB10B;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.VIC {
+    color: #984ea3;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.ACT {
+    color: #ff7f00;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.NT {
+    color: #a65628;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.SA {
+    color: #377eb8;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.WA {
+    color: #24C1D2;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+
